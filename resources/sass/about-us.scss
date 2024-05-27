@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+
+*{
+
+   margin:0; padding:0;
+   box-sizing: border-box;
+ 
+}
+// .about-box{
+//     width: 100%;
+// height: 100%;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// }
+// .about{
+//     position: relative;
+//     overflow: hidden;
+//     width: 70%;
+    
+// }
+
+
+
+
+
+
+
+.btn{
+   display: inline-block;
+   border-radius: .5rem;
+   margin-top: 1rem;
+   font-size: 1.8rem;
+   color:var(--white);
+   cursor: pointer;
+   padding:1rem 3rem;
+   text-transform: capitalize;
+   background-color: black;
+}
+.btn:hover{
+   background-color: wheat;
+   color: black;
+}
+
+.about .flex{
+   max-width: 1200px;
+   margin:0 auto;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:1.5rem;
+}
+
+.about .flex .image{
+   flex:1 1 40rem;
+}
+
+.about .flex .image img{
+   width: 100%;
+}
+
+.about .flex .content{
+   flex:1 1 40rem;
+   text-align: center;
+}
+
+.about .flex .content h3{
+   font-size: 3rem;
+   text-transform: capitalize;
+   color:var(--black);
+}
+
+.about .flex .content p{
+   padding:1rem 0;
+   font-size: 15px;
+   color:var(--light-color);
+   line-height: 2;
+}
+
+.about .flex:nth-child(2){
+   margin:3rem auto;
+   flex-wrap: wrap-reverse;
+}
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+   }
+
+   .header .flex{
+      padding:2rem;
+   }
+
+   .header .flex .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .flex .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .flex .navbar ul li{
+      width: 100%;
+      padding:.5rem;
+   }
+
+   .header .flex .navbar ul li ul{
+      position: static;
+      width: 100%;
+      animation: none;
+      background-color: var(--light-bg);
+   }
+
+   .header .flex .navbar ul li ul li{
+      padding-left: 2rem;
+   }
+
+   .home .content h3{
+      font-size: 3.5rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .heading h3{
+      font-size: 4rem;
+   }
+
+   .title{
+      font-size: 3rem;
+   }
+
+}

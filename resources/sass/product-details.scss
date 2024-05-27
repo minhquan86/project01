@@ -1,0 +1,610 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    :root {
+    --text-color: #FCFCFC;
+    --text-color2: #E64398;}
+    /* import font */
+    /* @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-Bold.eot');
+      src: url('../font/fonroboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-Bold.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-Bold.woff') format('woff'),
+          url('../font/fonroboto/Roboto-Bold.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-Bold.svg#Roboto-Bold') format('svg');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-Black.eot');
+      src: url('../font/fonroboto/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-Black.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-Black.woff') format('woff'),
+          url('../font/fonroboto/Roboto-Black.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-Black.svg#Roboto-Black') format('svg');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-BlackItalic.eot');
+      src: url('../font/fonroboto/Roboto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-BlackItalic.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-BlackItalic.woff') format('woff'),
+          url('../font/fonroboto/Roboto-BlackItalic.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-BlackItalic.svg#Roboto-BlackItalic') format('svg');
+      font-weight: 900;
+      font-style: italic;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-Italic.eot');
+      src: url('../font/fonroboto/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-Italic.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-Italic.woff') format('woff'),
+          url('../font/fonroboto/Roboto-Italic.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-Italic.svg#Roboto-Italic') format('svg');
+      font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-Medium.eot');
+      src: url('../font/fonroboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-Medium.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-Medium.woff') format('woff'),
+          url('../font/fonroboto/Roboto-Medium.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-Medium.svg#Roboto-Medium') format('svg');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-Light.eot');
+      src: url('../font/fonroboto/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-Light.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-Light.woff') format('woff'),
+          url('../font/fonroboto/Roboto-Light.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-Light.svg#Roboto-Light') format('svg');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-MediumItalic.eot');
+      src: url('../font/fonroboto/Roboto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-MediumItalic.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-MediumItalic.woff') format('woff'),
+          url('../font/fonroboto/Roboto-MediumItalic.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-MediumItalic.svg#Roboto-MediumItalic') format('svg');
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-LightItalic.eot');
+      src: url('../font/fonroboto/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-LightItalic.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-LightItalic.woff') format('woff'),
+          url('../font/fonroboto/Roboto-LightItalic.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-LightItalic.svg#Roboto-LightItalic') format('svg');
+      font-weight: 300;
+      font-style: italic;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-BoldItalic.eot');
+      src: url('../font/fonroboto/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-BoldItalic.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-BoldItalic.woff') format('woff'),
+          url('../font/fonroboto/Roboto-BoldItalic.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-BoldItalic.svg#Roboto-BoldItalic') format('svg');
+      font-weight: bold;
+      font-style: italic;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-Thin.eot');
+      src: url('../font/fonroboto/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-Thin.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-Thin.woff') format('woff'),
+          url('../font/fonroboto/Roboto-Thin.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-Thin.svg#Roboto-Thin') format('svg');
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-Regular.eot');
+      src: url('../font/fonroboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-Regular.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-Regular.woff') format('woff'),
+          url('../font/fonroboto/Roboto-Regular.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-Regular.svg#Roboto-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Roboto';
+      src: url('../font/fonroboto/Roboto-ThinItalic.eot');
+      src: url('../font/fonroboto/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+          url('../font/fonroboto/Roboto-ThinItalic.woff2') format('woff2'),
+          url('../font/fonroboto/Roboto-ThinItalic.woff') format('woff'),
+          url('../font/fonroboto/Roboto-ThinItalic.ttf') format('truetype'),
+          url('../font/fonroboto/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
+      font-weight: 100;
+      font-style: italic;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Pacifico';
+      src: url('../font/pacifico/Pacifico-Regular.eot');
+      src: url('../font/pacifico/Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../font/pacifico/Pacifico-Regular.woff2') format('woff2'),
+          url('../font/pacifico/Pacifico-Regular.woff') format('woff'),
+          url('../font/pacifico/Pacifico-Regular.ttf') format('truetype'),
+          url('../font/pacifico/Pacifico-Regular.svg#Pacifico-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    } */
+    
+    .bag-main {
+        position: relative;}
+        .bag {
+        z-index: 99999;
+        }
+        .bag-product {
+        color: #fff;
+        background-color: var(--tan-crayola);
+        font-size: var(--fs-6);
+        font-weight: var(--fw-500);
+        position: absolute;
+        bottom: 4px;
+        right: -9px;
+        padding-inline: 7px;
+        border-radius: 50%;}
+    
+    .product {width: 100%;
+     height: 500px;
+    margin-top: 10px;
+    display: flex;} 
+    .product-image {
+    width: 50%;
+    height:500px ;
+    
+    margin-right: 40px;
+    }
+    .product-image img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 100%;}
+    /* set up product */
+    .product-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;}
+    .product-price {
+    color: var(--text-color2);
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;}
+    .content-title {font-size: 24px;}
+    .product-add input, button {font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    }
+    .product-add input {width: 80px;}
+    .product-add button { background-color: var(--text-color2);
+    color: var(--text-color);}
+    .custom-list {list-style-type: '\2713';
+    margin-top: 20px;
+    padding-left: 0;}
+    .custom-list li {padding-left: 20px;
+    font-size: 20px;}
+    /* coment - rate */
+    .coment {white-space: pre-line; 
+    display: none;
+    }
+    .show {display: block;}
+    .tittle-coment {padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);}
+    
+    /* .tittle-coment i {transform: rotate(180deg);} */
+    .note {white-space: pre-line;
+    display: none; }
+    .product-sp .content {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+       } 
+       .content img {object-fit: cover;
+    max-height: 85%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đường viền mờ */
+       width: 100%;
+    }
+    .content img:hover {
+      transform: scale(0.9); /* Chỉnh tỷ lệ phóng to tùy ý (ở đây là 1.2) */
+      cursor: pointer; /* Thêm hiệu ứng con trỏ khi di chuột vào ảnh */
+    }
+    .content:hover {
+     border: 1px solid rgba(0,0,0,.125) /* Bóng cho phần content khi hover vào ảnh */
+    }
+    .content2 {margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    position: relative;}
+    
+    .cart {position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color:var(--text-color2);;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 5px 5px;
+    }
+    .cart i {margin-right: 3px;}   
+    .product-list {width: 100%;
+    height: 30px ;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: bold;}
+    /* set chân trang */
+    .bottom-footer {width: 100%;
+    background-color: var(--text-color);
+    font-size: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+     .bottom-footer .content { width: 100%;
+      margin-bottom: 30px;
+    padding-top: 10px;}
+    .content img {object-fit: cover;
+    max-height: 85%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%; /* Đường viền mờ */
+    }
+    /* setup mesenger */
+    .mesenger {width: 100px;
+    height: 50px;
+    background-color: var(--text-color2);;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .mesenger-main {
+      width: 400px;
+      height: 600px;
+      position: absolute;
+      border: 1px solid rgba(0, 0, 0, 1);
+      background-color: white;
+      top :300px;}
+    .mesenger-main.active {
+      width: 400px;
+      height: 600px;
+      position: absolute;
+      background-color: white;
+      z-index: 9999;
+      transition: 1.5s ease-out;
+     border: 1px solid rgba(0, 0, 0, 1);
+     top:-300px;}
+     .mesenger-main input {position: absolute;
+    top:300px;}
+    .mesenger-main button {
+      font-size: 24px;
+      width: 28px;
+      border: 1px solid rgba(0, 0, 0, 1);}
+    .coment-rate {margin-top: 10px;}
+    .content2 .price {color: var(--text-color2);
+      font-weight: bold;
+      font-style:italic ;}
+    
+     .cart-modal-overlay {
+    top:0;
+    transform: translateX(-200%);
+    position: fixed;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 999999;
+     transition: .5s ease-out;}
+    
+    .cart-modal {
+    height: 100vh;
+    width: 40%;
+    background-color: white;
+     float: right;
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    
+    .cart-wraper {display: flex;
+    font-size: 20px;
+    gap: 10px;
+    margin: 10px 10px;}
+    .cart-count {width: 20px;
+    height: 20px;
+    background-color: var(--text-color2);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;}
+     #close-btn {
+    font-size: 32px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin: 10px 10px 0 0;
+    color: black;
+    cursor: pointer;
+    }
+    .cart-image-name {width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(0, 0, 0, .2);}
+    .cart-main-name {position: relative;
+    width: 70%;
+    font-size: 1px;}
+    .cart-name { display: flex;
+    margin-bottom: 5px;
+    font-size: 16px;}
+    .cart-name-title {width: 80%;
+    font-size: 20px;}
+    .cart-name .remove-btn {border: none;
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;}
+    
+    .cart-price-quality {display: flex;
+    align-items: center;
+    justify-content: space-between;} 
+    .cart-is-empty {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    display: none;}
+    .total {width: 100%;
+    text-align: center;
+     bottom: 0;
+     padding: 10px;
+    /* display: none; */
+    }
+    
+    .cart-total {
+    color: black;
+    font-size: 20px;
+    }
+    
+    .cart-total-price {display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 10px;
+    }
+    .total-price {
+    color: var(--text-color2);
+    font-size: 20px;
+    display: block;
+    }
+    .purchase-btn {
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: var(--text-color2);
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+    width: 100%;
+    height: 50px;
+    margin: 10px 10px;
+    float: unset;
+    }
+    .purchase-btn a {color: white;}
+    .product-rows {
+    margin-top: 30px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;} 
+    
+    .listing-product {
+        margin-top: 20px;
+        
+        }
+        .btn-list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-listing {
+        background-color: #fbb416;
+        padding: 8px 20px;
+        margin-right: 15px;
+        color: #000;
+        border: 3px solid;
+        
+        
+        }
+        
+        .btn-listing.active {
+        background-color:#000;
+        color:#fbb416;
+        }
+        
+        .tab-content {
+        margin-top: 20px;
+        display: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab-content.active {
+        display: block;
+        }
+        
+        .tab-1 .content {
+        width: 100%;
+     
+         background-color: #fff;
+    
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab-2 .content {
+        width: 100%;
+    
+    
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .title-product {width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    background-color: #d6d6d6;}
+        
+         .product-sp .content {
+      
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        
+        margin-bottom: 30px;
+         } 
+         .bottom-footer {width: 100%;
+        height: 300px;
+        background-color:#F8F0E5;
+        font-size: 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+         .bottom-footer  { width: 100%;
+        height: 250px;
+        margin-bottom: 30px;
+        padding-top: 10px;}
+        .content img {
+        padding: 14px 14px 10px 14px;
+         object-fit: cover;
+        width: 100%;
+        max-height: 85%;
+        transition: transform 0.3s ease-out;
+       
+        }
+        .content img:hover {
+        transform: scale(1.1); /* Chỉnh tỷ lệ phóng to tùy ý (ở đây là 1.2)
+         */
+            }
+        .content:hover {
+         border: 1px solid rgba(0,0,0,.125) /* Bóng cho phần content khi hover vào ảnh */
+        }
+        .name-price {
+            margin: 10px 0 10px 10px;
+        }
+        .name{
+            font-size:20px;
+            line-height: 30px;
+            font-weight: bold;
+        }
+        .content2 .price {color: red;
+        font-weight: bold;
+        ;}
+        .cart 
+        {
+        width: 100%;
+        color: white;
+        background-color: #fbb416;
+        font-size: 16px;
+        padding: 5px 5px;
+        gap: 5px;
+        }
+         /*style lại giỏ hàng*/
+         .product-rows {
+        margin-top: 50px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;}
+        
+        .cart-image {
+        width: 150px;
+        margin: 15px;
+        border-radius: 10px;
+        }
+        
+        .cart-price {
+        color: black;
+        font-size: 20px;
+        font-weight: bolder;
+        color: red;
+        }
+        
+        .product-quantity {
+        width: 50px;
+        font-size: 20px;
+        margin-left: 20px;
+        }
+        
+        .remove-btn:active {
+        transform: translateY(5px);
+        }
+        h3{
+            font-size: 30px;
+        }
+     
+    .product-content {font-size: 20px;}
+    .product {height: 700px;}
+    
+    

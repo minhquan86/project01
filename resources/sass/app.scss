@@ -1,0 +1,33 @@
+// Variables
+@import 'variables';
+
+@import './style';
+@import './styles';
+// @import './about-us';
+// @import './blog.scss';
+// @import './cart.scss';
+// @import './log.scss';
+// @import './pay.scss';
+// @import './product-details.scss';
+@import './owl.carousel.scss';
+@import './owl.theme.default.scss';
+@import './owl.theme.green.scss';
+
+// Bootstrap
+// @import '~admin-lte/build/scss/adminlte';
+
+.text-center {
+  text-align: center;
+}
+
+.login {
+  background-color: #FF0000;
+  color: white;
+  border-radius: 30px;
+}
+
+.logo img {
+  height: 70%;
+  font-size: medium;
+  display: block;
+}
