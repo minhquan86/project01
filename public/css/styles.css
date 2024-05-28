@@ -1,0 +1,339 @@
+/* reser browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*giỏ hàng */
+.cart-modal-overlay {
+    display: grid;
+    place-items: center;
+
+    transform: translateX(-200%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999999;
+    transition: 0.5s ease-out;
+}
+
+.cart-modal {
+    height: 90%;
+    width: 60%;
+    background-color: white;
+    float: right;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.cart-wraper {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.cart-tittle {
+    font-size: 30px;
+}
+
+#close-btn {
+    font-size: 32px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin: 10px 10px 0 0;
+    color: black;
+    cursor: pointer;
+}
+.cart-image-name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.cart-main-name {
+    position: relative;
+    width: 70%;
+    font-size: 1px;
+}
+.cart-name {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.cart-name-title {
+    width: 80%;
+    font-size: 20px;
+}
+.cart-name .remove-btn {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.cart-price-quality {
+    display: flex;
+    justify-content: space-between;
+}
+.sluong {
+    display: flex;
+}
+.cart-is-empty {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    display: none;
+}
+.total {
+    width: 100%;
+    text-align: center;
+    /* display: none; */
+}
+
+.cart-total {
+    color: black;
+    font-size: 25px;
+}
+
+.cart-total-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.total-price {
+    color: red;
+    font-size: 25px;
+    display: block;
+}
+.purchase-btn {
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    height: 50px;
+    width: 100%;
+}
+.purchase-btn a {
+    color: white;
+}
+.product-rows {
+    margin-top: 30px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .product-row {
+    display: flex;
+    align-items: center;
+    }  */
+/* top main */
+.top-hearder {
+    width: 100%;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+
+/* tài khoản. giỏ hàng */
+
+.bag-main {
+    position: relative;
+}
+.bag {
+    z-index: 99999;
+}
+.bag-product {
+    color: #fff;
+    background-color: var(--tan-crayola);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+    position: absolute;
+    bottom: -2px;
+    right: -10px;
+    padding-inline: 7px;
+    border-radius: 50%;
+}
+
+/* setup owlcarousel */
+/* .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{display: none;}
+    .owl-theme .owl-dots {display: none;} */
+/* Listing Product */
+.listing-product {
+    margin-top: 20px;
+}
+.btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-listing {
+    background-color: #fbb416;
+    padding: 8px 20px;
+    margin-right: 15px;
+    color: #000;
+    border: 3px solid;
+}
+
+.btn-listing.active {
+    background-color: #000;
+    color: #fbb416;
+}
+
+.tab-content {
+    margin-top: 20px;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* title product */
+.title-product-1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: -40px;
+}
+.title-product-1 h1 {
+    font-weight: bold;
+    font-family: var(--ff-mr_de_haviland);
+}
+.title-product {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    /* background-color: #d6d6d6;*/
+}
+
+.product-sp {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 30px;
+}
+.bottom-footer {
+    width: 100%;
+    height: 300px;
+    background-color: #f8f0e5;
+    font-size: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.bottom-footer {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+.content {
+    box-shadow: -8px 8px 24px 0px rgba(0, 0, 0, 0.2);
+}
+.content img {
+    padding: 14px 14px 10px 14px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 85%;
+    transition: transform 0.3s ease-out;
+}
+.content img:hover {
+    transform: scale(1.1); /* Chỉnh tỷ lệ phóng to tùy ý (ở đây là 1.2)
+     */
+}
+
+.name-price {
+    margin: 10px 0 10px 10px;
+}
+.name {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.content2 .price {
+    color: red;
+    font-weight: bold;
+}
+.cart {
+    width: 100%;
+    color: white;
+    background-color: #fbb416;
+    font-size: 16px;
+    padding: 5px 5px;
+    gap: 5px;
+}
+/*style lại giỏ hàng*/
+.product-rows {
+    margin-top: 50px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-image {
+    width: 150px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.cart-price {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+}
+
+.product-quantity {
+    width: 50px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.remove-btn:active {
+    transform: translateY(5px);
+}
+h3 {
+    font-size: 30px;
+}
+.product-list {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+    background-color: #d6d6d6;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 40px;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin: 0 15px;
+}
